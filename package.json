@@ -1,0 +1,24 @@
+{
+  "name": "leaflet",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "knockout": "^3.4.2",
+    "leaflet": "^1.4.0"
+  },
+  "scripts": {
+    "build": "webpack --watch",
+    "serve": "http-server ./ -p 9000",
+    "dev": "concurrently \"yarn serve\" \"yarn build\"  "
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "babel-loader": "^8.0.5",
+    "concurrently": "^4.1.0",
+    "http-server": "^0.11.1",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3"
+  }
+}

@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Moja aplikacja</title>
+        <link rel="stylesheet" href="/style.css"/>
+        <link rel="stylesheet" href="/node_modules/leaflet/dist/leaflet.css"/>
+    </head>
+    <body id="app">
+        <div id="map">
+
+        </div>
+        <div class="layers">
+            <div>
+                <input type="checkbox" data-bind="checked: adminLayerVisible"/> Warstwa administracyjna
+            </div>
+            <div>
+                <input type="checkbox" data-bind="checked: zusLayerVisible"/> Warstwa ZUS
+            </div>
+        </div>
+        <script src="/dist/bundle.js"></script>
+    </body>
+</html>
